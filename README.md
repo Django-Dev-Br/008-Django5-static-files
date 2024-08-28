@@ -48,8 +48,8 @@ Este comando irá procurar todos os arquivos estáticos nos diretórios especifi
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/Django-Dev-Br/008-Django-4-Static-Files.git
-    cd 008-django4-static-files
+    git clone https://github.com/Django-Dev-Br/008-Django-4-static-files.git
+    cd 008-Django-4-static-files
     ```
 
 2. **Crie um ambiente virtual**:
@@ -103,6 +103,29 @@ Aqui está o código HTML usado para carregar a imagem estática usando o templa
 </body>
 </html>
 
+```
+
+### Estrutura de Diretórios do Projeto
+
+```
+008-django4-static-files/
+├── manage.py
+├── myapp/
+│   ├── __init__.py
+│   ├── apps.py
+│   ├── views.py           # Contém a função 'index' para renderizar 'index.html'
+│   └── templates/
+│       └── index.html     # Página HTML que carrega a imagem estática
+├── myproject/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py        # Configurações de STATIC_DIRS, STATICFILES_DIRS, STATIC_ROOT
+│   ├── urls.py            # URL principal direcionando para 'myapp.views.index'
+│   └── wsgi.py
+└── static/
+    └── myapp/
+        └── images/
+            └── pythondjango.jpg  # Imagem a ser exibida
 ```
 
 ### Sobre Nosso Treinamento Prático-Profissional com projeto real para iniciantes e avançados em web DevOps Full-stack com Python, Django, Bootstrap e Linux.
