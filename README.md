@@ -1,5 +1,5 @@
 
-# 008 Django 4 Static Files Example
+# 008 Django 4 Static Files 
 
 ### O que são Arquivos Estáticos no Django?
 
