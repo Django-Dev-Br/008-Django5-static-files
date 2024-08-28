@@ -11,6 +11,8 @@ Arquivos estáticos no Django referem-se a arquivos que não mudam em resposta �
 
 - **STATIC_ROOT**: Durante o desenvolvimento, o Django serve arquivos estáticos diretamente. No entanto, em produção, todos os arquivos estáticos devem ser coletados em um único diretório definido por `STATIC_ROOT` e servidos por um servidor web dedicado.
 
+Documentação: [https://docs.djangoproject.com/en/4.0/howto/static-files/](https://docs.djangoproject.com/en/4.0/howto/static-files/)
+
 ### Coletando Arquivos Estáticos para Produção
 
 Quando estiver pronto para implantar seu projeto Django em produção, é necessário coletar todos os arquivos estáticos em um único diretório definido por `STATIC_ROOT`. Isso permite que o servidor web sirva esses arquivos de forma eficiente. Para coletar todos os arquivos estáticos, use o comando:
