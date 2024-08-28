@@ -48,8 +48,8 @@ Este comando irá procurar todos os arquivos estáticos nos diretórios especifi
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/Django-Dev-Br/008-Django-4-Static-Files.git
-    cd 008-django4-static-files
+    git clone https://github.com/Django-Dev-Br/008-Django-4-static-files.git
+    cd 008-Django-4-static-files
     ```
 
 2. **Crie um ambiente virtual**:
