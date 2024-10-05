@@ -145,6 +145,22 @@ Aqui está o código HTML usado para carregar a imagem estática usando o templa
     └── myapp/
         └── images/
             └── pythondjango.jpg  # Imagem a ser exibida
+├── staticfiles/        # Diretório para onde os arquivos estáticos são coletados quando executamos o comando `collectstatic`
+│   ├── admin/          # Arquivos estáticos padrão do Django Admin
+│   │   ├── css/        # Arquivos CSS usados pelo painel administrativo
+│   │   │   └── vendor/
+│   │   │       └── select2/
+│   │   ├── img/        # Imagens usadas no painel administrativo
+│   │   │   └── gis/
+│   │   └── js/         # Arquivos JavaScript usados pelo painel administrativo
+│   │       ├── admin/
+│   │       └── vendor/
+│   │           ├── jquery/
+│   │           ├── select2/
+│   │           │   └── i18n/
+│   │           └── xregexp/
+│   └── myapp/          # Arquivos estáticos específicos do app `myapp`
+│       └── images/     # Imagens usadas no app `myapp`
 ```
 
 ### Código deste projeto
