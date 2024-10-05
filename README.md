@@ -147,6 +147,21 @@ Aqui está o código HTML usado para carregar a imagem estática usando o templa
             └── pythondjango.jpg  # Imagem a ser exibida
 ```
 
+### Código deste projeto
+
+arquivo: myprojecto/settings.py
+```python
+
+STATIC_URL = '/static/'  # Define o caminho base para acessar arquivos estáticos no navegador
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',  # Indica ao Django onde buscar arquivos estáticos adicionais durante o desenvolvimento
+]
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Local onde os arquivos estáticos serão coletados quando executarmos o comando `collectstatic`
+
+```
+
 ### Sobre Nosso Treinamento Prático-Profissional com projeto real para iniciantes e avançados em web DevOps Full-stack com Python, Django, Bootstrap e Linux.
 
 [Django Developers Brasil - Aprenda programando enquanto programa aprendendo!](https://django.dev.br/)
