@@ -64,8 +64,14 @@ Este comando irá procurar todos os arquivos estáticos nos diretórios especifi
     ```bash
     source myvenv/bin/activate  
     ```
-
-5. **Instale o Django**:
+    
+6. **Acesse a pasta do projeto Django**:
+   
+    ```bash
+    cd 008-Django5-static-files
+    ```
+    
+6. **Instale o Django**:
 
    Fazer a instalação após a ativação da virtual env fará com que a instalação seja feita nessa pasta ao invés do computador. Isso significa que o pacote Django não estará disponivel para todos os usuários do computador, mas apenas para o contexto no qual essa venv esteja ativada. Veremos sua ativação logo abaixo.
 
@@ -87,11 +93,6 @@ Este comando irá procurar todos os arquivos estáticos nos diretórios especifi
     ```
     O arquivo requirements.txt é um arquivo de texto que contém uma lista de pacotes a ser instalado em uma venv. É uma boa prática de programação do ecossistema Python.
 
-6. **Acesse a pasta do projeto Django**:
-   
-    ```bash
-    cd 008-Django5-static-files
-    ```
     
 8. **Execute o servidor de desenvolvimento**:
     ```bash
