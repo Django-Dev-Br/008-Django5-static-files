@@ -1,5 +1,5 @@
 
-# 008 Django 4 Static Files 
+# 008 Django 5 - Static Files (html, css, java script e imagens)
 
 ### O que são Arquivos Estáticos no Django?
 
@@ -20,69 +20,85 @@ Quando estiver pronto para implantar seu projeto Django em produção, é necess
 ```bash
 python manage.py collectstatic
 ```
-
 Este comando irá procurar todos os arquivos estáticos nos diretórios especificados em `STATICFILES_DIRS` e nas pastas `static/` de cada aplicativo, e copiá-los para o diretório definido por `STATIC_ROOT`.
 
 ## COMO RODAR ESSE PROJETO EM SEU COMPUTADOR:
 
 ### Requisitos
 
-- **Python 3.12**  
-  [Baixar Python 3.12](https://www.python.org/downloads/release/python-3122/)
+- **Python 3.12 com PIP e venv**
+- **o Django 5 requer Python 3.10 ou superior.**
 
-  Confira o vídeo para saber como trabalhar com múltiplas versões do Python e com venv (ambiente virtual): [Trabalhando com Múltiplas Versões do Python + venv](https://youtu.be/eetDeQrv0Rs?si=rAIDmLCgdeh7ouXa)
+- **No [repositório 001](https://github.com/Django-Dev-Br/001-django4-basic-project) há explicações sobre PIP e venv**
 
-- **Virtualenv**
-
-  Para instalar o pacote `virtualenv` no Python, utilize os seguintes comandos:
-
-  - **Linux**:
-    ```bash
-    python3 -m pip install virtualenv
-    ```
-
-  - **Windows**:
-    ```bash
-    python -m pip install virtualenv
-    ```
+  Se necessário, confira o vídeo abaixo para saber como trabalhar com múltiplas versões do Python e com venv (ambiente virtual):
+ [![Watch the video](https://img.youtube.com/vi/eetDeQrv0Rs/0.jpg)](https://youtu.be/eetDeQrv0Rs)
 
 ### Passos para Executar
 
 1. **Clone o repositório**:
-    ```bash
-    git clone https://github.com/Django-Dev-Br/008-Django-4-static-files.git
-    cd 008-Django-4-static-files
-    ```
-
-2. **Crie um ambiente virtual**:
    
-    - **Linux**:
     ```bash
-    python3 -m venv myvenv
+    git clone https://github.com/Django-Dev-Br/008-Django5-static-files.git
     ```
 
-  - **Windows**:
+3. **Crie  um ambiente virtual no diretório root**:
+
+   **Windows**
     ```bash
-    python -m venv myvenv
+     python -m venv myvenv 
+    ```
+      **Linux**
+     ```bash
+     python3 -m venv myvenv  
     ```
 
-3. **Ative o ambiente virtual criado**:
+4. **Ative o ambiente virtual criado**:
+
+   **Windows**
     ```bash
-    source myvenv/bin/activate  # Linux
-    myvenv\Scripts\activate  # Windows
+    myvenv\Scripts\activate  
     ```
 
-4. **Instale o Django**:
+     **Linux**
     ```bash
-    pip install django==4.2.15
+    source myvenv/bin/activate  
     ```
 
-5. **Execute o servidor de desenvolvimento**:
+5. **Instale o Django**:
+
+   Fazer a instalação após a ativação da virtual env fará com que a instalação seja feita nessa pasta ao invés do computador. Isso significa que o pacote Django não estará disponivel para todos os usuários do computador, mas apenas para o contexto no qual essa venv esteja ativada. Veremos sua ativação logo abaixo.
+
+    **Instalação manualmente via gerenciador de dependências PIP**
+    ```bash
+    pip install django
+    ```
+    - use, preferencialmente, a versão 5.1. Para tanto, execute o comando:
+
+     ```bash
+    pip install  "django>=5.1,<=5.2"
+    ```
+
+    ----- **OU** -----
+
+    **Instalação via arquivo requirements**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    O arquivo requirements.txt é um arquivo de texto que contém uma lista de pacotes a ser instalado em uma venv. É uma boa prática de programação do ecossistema Python.
+
+6. **Acesse a pasta do projeto Django**:
+   
+    ```bash
+    cd 008-Django5-static-files
+    ```
+    
+8. **Execute o servidor de desenvolvimento**:
     ```bash
     python manage.py runserver
     ```
 
-7. **Acesse a aplicação no seu navegador**:
+9. **Acesse a aplicação no seu navegador**:
 
    Vá para [http://127.0.0.1:8000/](http://127.0.0.1:8000/) e você verá a imagem `pythondjango.jpg` sendo exibida na página inicial.
 
