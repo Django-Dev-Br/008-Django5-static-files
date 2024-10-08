@@ -127,7 +127,7 @@ Aqui está o código HTML usado para carregar a imagem estática usando o templa
 ### Estrutura de Diretórios do Projeto
 
 ```
-008-django4-static-files/
+008-django5-static-files/
 ├── manage.py
 ├── myapp/
 │   ├── __init__.py
@@ -161,6 +161,7 @@ Aqui está o código HTML usado para carregar a imagem estática usando o templa
 │   │           └── xregexp/
 │   └── myapp/          # Arquivos estáticos específicos do app `myapp`
 │       └── images/     # Imagens usadas no app `myapp`
+└── requirements.txt    # Lista de pacotes Python necessários para o projeto
 ```
 
 ### Código deste projeto
